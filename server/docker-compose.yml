@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - MongoURI=mongodb://db:27017/eschat
+      - WECHAT_TOKEN=YOUR_WECHAT_TOKEN
+      - JWT_SECRET_KEY=YOUR_JWT_SECRET_KEY
+      - MAX_LENGTH=2000
+      - DAILY_LIMIT=20
+      - VIP_MAX_LENGTH=10000
+      - VIP_DAILY_LIMIT=99
+      - SHARE_MAX_COUNT=5
+    ports:
+      - "3300:3300"
+    depends_on:
+      - db
+
+  db:
+    image: mongo:latest
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
+    ports:
+      - "27017:27017"

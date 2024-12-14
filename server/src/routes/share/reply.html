@@ -1,0 +1,27 @@
+<div class="relative">
+  <div class="flex m-b-6 overflow-hidden">
+    <div class="mr-2 basis-10 flex-shrink-0 flex flex-col justify-between items-end m-b-1">
+      <el-avatar class="text-xl flex items-center">A</el-avatar>
+      <el-icon class="cursor-pointer text-md">
+        <copy-document class="text-#aaaaaa hover:text-[#333]" @click='onUserCopy("{{id}}")' />
+      </el-icon>
+    </div>
+    <div class="overflow-hidden flex flex-col">
+      <span class="text-xs text-[#b4bbc4] text-left">{{time}}</span>
+      <div class="flex">
+        <div class="w-full flex text-black text-wrap min-w-[20px] rounded-md p-3 bg-[#f4f6f8] dark:bg-[#2f2f32] mt-2">
+          <div class="w-full text-black"
+            class="text-wrap min-w-[20px] rounded-md bg-[#f4f6f8] dark:bg-[#2f2f32] message-reply">
+            <div ref="textRef" class="leading-relaxed break-words">
+              <div>
+                <div class="markdown-body">
+                  {{content}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

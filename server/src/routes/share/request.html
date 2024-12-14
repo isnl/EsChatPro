@@ -1,0 +1,18 @@
+<div class="relative">
+  <div class="flex m-b-6 overflow-hidden flex-row-reverse">
+    <div class="ml-2 basis-10 flex-shrink-0 flex flex-col justify-between">
+      <el-avatar class="text-xl flex items-center">Q</el-avatar>
+      <el-icon class="cursor-pointer text-md mb-1">
+        <copy-document class="text-#aaaaaa hover:text-[#333]" @click='onUserCopy("{{id}}")' />
+      </el-icon>
+    </div>
+    <div class="overflow-hidden flex flex-col items-end">
+      <span class="text-xs text-[#b4bbc4] text-left">{{time}}</span>
+      <div class="flex flex-row-reverse">
+        <div class="w-full text-black text-wrap min-w-[20px] rounded-md p-3 bg-[#d2f9d1] dark:bg-[#2f2f32] mt-2">
+          <div class="whitespace-pre-wrap text-sm text-[#2f2f32] dark-text-[#b4bbc4]">{{content}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

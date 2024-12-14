@@ -1,0 +1,8 @@
+logs
+node_modules
+.git
+.env
+app.ts
+tsconfig.json
+tsup.config.ts
+package.lock.json

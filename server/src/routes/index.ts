@@ -1,0 +1,11 @@
+export { default as wechatRouter } from "./wechat";
+export { default as chatRouter } from "./chat";
+export { default as userRouter } from "./user";
+export { default as homeRouter } from "./home";
+export { default as shareRouter } from "./share";
+export { default as timelineRouter } from "./timeline";
+export { default as adminRouter } from "./admin";
+export { default as noticeRouter } from "./notice";
+export { default as vipRouter } from "./vip";
+export { default as systemRoleRouter } from "./system_role";
+export { default as syncRouter } from "./sync";
