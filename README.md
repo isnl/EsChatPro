@@ -13,6 +13,11 @@
 </p>
 </div>
 
+## 系列文章 <!-- omit in toc -->
+
+- [本地开发运行指南](./docs/本地开发运行指南.md)
+- [接入大模型教程](./docs/接入大模型教程.md)
+
 ## 版本特性 <!-- omit in toc -->
 
 - [x] 可接入任何主流 `OpendAI接口兼容` 的 AI 大语言模型
@@ -47,16 +52,16 @@
 - [前置要求](#前置要求)
   - [Node](#node)
   - [MongoDB](#mongodb)
-  - [用户配置 服务端 server 目录](#用户配置-服务端server目录)
+  - [用户配置 服务端 server 目录](#用户配置-服务端-server-目录)
     - [MongoURI](#mongouri)
-    - [JWT_SECRET_KEY](#jwt_secret_key)
-    - [MAX_LENGTH](#max_length)
-    - [DAILY_LIMIT](#daily_limit)
-    - [VIP_MAX_LENGTH](#vip_max_length)
-    - [VIP_DAILY_LIMIT](#vip_daily_limit)
-    - [SHARE_MAX_COUNT](#share_max_count)
-    - [WECHAT_TOKEN](#wechat_token)
-  - [用户配置 客户端 client 目录](#用户配置-客户端client目录)
+    - [JWT\_SECRET\_KEY](#jwt_secret_key)
+    - [MAX\_LENGTH](#max_length)
+    - [DAILY\_LIMIT](#daily_limit)
+    - [VIP\_MAX\_LENGTH](#vip_max_length)
+    - [VIP\_DAILY\_LIMIT](#vip_daily_limit)
+    - [SHARE\_MAX\_COUNT](#share_max_count)
+    - [WECHAT\_TOKEN](#wechat_token)
+  - [用户配置 客户端 client 目录](#用户配置-客户端-client-目录)
     - [网站登录 - 公众号二维码存放路径](#网站登录---公众号二维码存放路径)
 - [应用内部分截图展示](#应用内部分截图展示)
   - [🏠 首页](#-首页)
@@ -79,9 +84,8 @@
 - [注意事项](#注意事项)
   - [公众号用户设置管理员](#公众号用户设置管理员)
   - [非公众号授权登录方式 新建用户](#非公众号授权登录方式-新建用户)
-  - [新建管理员用户](#新建管理员用户)
-  - [向数据库中注入后台管理页面的动态路由信息](#向数据库中注入后台管理页面的动态路由信息)
-  - [添加 AI 大模型](#添加ai大模型)
+  - [添加管理员用户](#添加管理员用户)
+  - [添加 AI 大模型](#添加-ai-大模型)
 - [常见问题](#常见问题)
 - [免责声明](#免责声明)
 - [支持作者](#支持作者)
@@ -621,3 +625,5 @@ docker run -it --rm webpeanut/eschat_pro sh
 ## LICENSE
 
 [MIT](https://opensource.org/license/mit/)
+
+
