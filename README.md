@@ -54,13 +54,13 @@
   - [MongoDB](#mongodb)
   - [用户配置 服务端 server 目录](#用户配置-服务端-server-目录)
     - [MongoURI](#mongouri)
-    - [JWT\_SECRET\_KEY](#jwt_secret_key)
-    - [MAX\_LENGTH](#max_length)
-    - [DAILY\_LIMIT](#daily_limit)
-    - [VIP\_MAX\_LENGTH](#vip_max_length)
-    - [VIP\_DAILY\_LIMIT](#vip_daily_limit)
-    - [SHARE\_MAX\_COUNT](#share_max_count)
-    - [WECHAT\_TOKEN](#wechat_token)
+    - [JWT_SECRET_KEY](#jwt_secret_key)
+    - [MAX_LENGTH](#max_length)
+    - [DAILY_LIMIT](#daily_limit)
+    - [VIP_MAX_LENGTH](#vip_max_length)
+    - [VIP_DAILY_LIMIT](#vip_daily_limit)
+    - [SHARE_MAX_COUNT](#share_max_count)
+    - [WECHAT_TOKEN](#wechat_token)
   - [用户配置 客户端 client 目录](#用户配置-客户端-client-目录)
     - [网站登录 - 公众号二维码存放路径](#网站登录---公众号二维码存放路径)
 - [应用内部分截图展示](#应用内部分截图展示)
@@ -625,5 +625,3 @@ docker run -it --rm webpeanut/eschat_pro sh
 ## LICENSE
 
 [MIT](https://opensource.org/license/mit/)
-
-
