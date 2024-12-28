@@ -62,7 +62,7 @@ const submitForm = async (formEl: FormInstance | undefined) => {
       loading.value = true
       const action = isCreate.value ? 'post' : 'put'
       const params = {
-        ...ruleForm
+        ...ruleForm.value
       }
       const url = isCreate.value ? 'admin/timeline' : `admin/timeline/${props.editInfo._id}`
       service[action](url, params)
